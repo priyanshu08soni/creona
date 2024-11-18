@@ -110,7 +110,7 @@
   /* ===== TYPOGRAPHY */
   /* 44 */
   .h1-semibold {
-    @apply text-[36px] font-semibold sm:text-[44px] leading-[120%] sm:leading-[56px];
+    @apply text-[36px] font-semibold sm:text-[20px] leading-[120%] sm:leading-[56px];
   }
 
   /* 36 */
@@ -220,11 +220,12 @@
 
   /* Home Page */
   .home {
-    @apply sm:flex-center hidden h-72 flex-col gap-4 rounded-[20px] border bg-banner bg-cover bg-no-repeat p-10 shadow-inner;
+    @apply sm:flex-center hidden h-20 flex-col gap-4 rounded-[20px] border bg-cover bg-no-repeat p-10 shadow-inner bg-blue-100;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
 
   .home-heading {
-    @apply h1-semibold max-w-[500px] flex-wrap text-center text-white shadow-sm;
+    @apply h1-semibold max-w-[500px] flex-wrap text-center text-black/40 shadow-sm;
   }
 
   /* Credits Page */
@@ -364,6 +365,7 @@
 
 /* =====  CLERK OVERRIDES */
 .cl-userButtonBox {
+
   display: flex;
   flex-flow: row-reverse;
   gap: 12px;
@@ -373,4 +375,41 @@
   font-size: 16px;
   font-weight: 600;
   color: #384262;
+}
+
+/* Additional classes */
+.head-container{
+  background-color: rgb(114, 114, 160);
+}
+.home-wrapper{
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.canvas{
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 3px;
+}
+.inputs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top:20px;
+}
+.labels{
+  display: flex;
+  align-items: center;
+  background-color: rgb(221, 225, 241);
+  border-radius: 10px;
+  padding: 10px;
+}
+.button-group{
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+.input-text{
+  margin-top: 10px;
 }

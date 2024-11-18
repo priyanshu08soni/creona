@@ -1,23 +1,18 @@
-
-import { navLinks } from '@/constants'
-import { UserButton } from '@clerk/nextjs'
-import { LogIn } from 'lucide-react'
-
-import Image from 'next/image'
-import Link from 'next/link'
+import CanvasWithText from '@/components/shared/Canvas'
 import React from 'react'
-const Home = async ({searchParams} : SearchParamProps) => {
+const Home = async () => {
 
   return (
-    <>
+    <div className='main-container'>
       <section className='home' >
-        <h1 className='home-heading'>
-          Make Your Creative Design Using Creona
+        <h1 className='home-heading' >
+          CREONA - CREATE YOUR OWN DESIGN
         </h1>
       </section>
       <section className='sm:mt-12' >
+        <CanvasWithText/>
       </section>
-    </>
+    </div>
   )
 }
 
