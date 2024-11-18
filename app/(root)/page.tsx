@@ -12,7 +12,7 @@ const Home = async ({searchParams} : SearchParamProps) => {
     <>
       <section className='home' >
         <h1 className='home-heading'>
-          Make Your Creative Images with MegaMinds
+          Make Your Creative Design Using Creona
         </h1>
       </section>
       <section className='sm:mt-12' >
