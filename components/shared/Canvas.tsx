@@ -260,7 +260,7 @@ const EditableCanvas: React.FC = () => {
       </div>
       <canvas
         ref={canvasRef}
-        width={window.innerWidth>600?600:400}
+        width={window?.innerWidth>600?600:400}
         height={400}
         className="canvas"
         style={{
