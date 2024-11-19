@@ -271,7 +271,7 @@ const EditableCanvas: React.FC = () => {
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
       />
-      <div>
+      <div className="styles">
         <div className="input-text flex gap-8">
           <Button onClick={handleAddTextBox} className="add-text-button">
             Add Text Box
