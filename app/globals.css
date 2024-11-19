@@ -378,6 +378,7 @@
 }
 
 /* Additional classes */
+
 .head-container{
   background-color: rgb(114, 114, 160);
 }
@@ -389,6 +390,7 @@
 }
 .canvas{
   border-radius: 10px;
+  image-rendering: crisp-edges;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 3px;
 }
 .inputs{

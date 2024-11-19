@@ -35,9 +35,9 @@ const EditableCanvas: React.FC = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas?.getContext("2d");
-
+    const devicePixelRatio = window.devicePixelRatio || 1;
     if (canvas && ctx) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+      ctx.clearRect(0, 0, canvas.clientWidth * devicePixelRatio, canvas.clientHeight * devicePixelRatio); // Clear the canvas
 
       // Draw all text boxes
       textBoxes.forEach(
